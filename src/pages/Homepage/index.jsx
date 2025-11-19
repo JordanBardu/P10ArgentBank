@@ -5,7 +5,7 @@ function Homepage() {
   return (
     <>
       <MainBanner title="titre" subtitle="soustitre" />
-      <Icon icontype="cash" strokeColor="green" title="money" subtitle="toto" />
+      <Icon iconType="cash" strokeColor="green" title="money" subtitle="toto" />
     </>
   );
 }

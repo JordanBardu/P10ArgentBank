@@ -1,4 +1,4 @@
-function Icon(iconType, strokeColor, title, subtitle) {
+function Icon({ iconType, strokeColor, title, subtitle }) {
   return (
     <>
       <h1>{iconType}</h1>

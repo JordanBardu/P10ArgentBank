@@ -1,4 +1,4 @@
-function MainBanner(title, subtitle) {
+function MainBanner({ title, subtitle }) {
   return (
     <>
       <h1>{title}</h1>
