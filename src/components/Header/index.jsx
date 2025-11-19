@@ -1,22 +1,23 @@
 import logoSrc from "../../assets/img/argentBankLogo.png";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <>
       <nav className="main-nav">
-        <a className="main-nav-logo" href="/">
+        <Link to="/" className="main-nav-logo" aria-label="Accueil">
           <img
             className="main-nav-logo-image"
             src={logoSrc}
             alt="Argent Bank Logo"
           />
-        </a>
+        </Link>
         <h1 className="sr-only">Argent Bank</h1>
         <div>
-          <a className="main-nav-item" href="/sign-in">
+          <Link to="/sign-in" className="main-nav-item" aria-label="Accueil">
             <i className="fa fa-user-circle"></i>
             Sign In
-          </a>
+          </Link>
         </div>
       </nav>
     </>

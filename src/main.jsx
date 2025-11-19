@@ -7,19 +7,19 @@ import SignInPage from "./pages/SignInPage/index.jsx";
 import DashboardPage from "./pages/DashboardPage/index.jsx";
 import Header from "./components/Header/index.jsx";
 import Footer from "./components/Footer/index.jsx";
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Header />
     <BrowserRouter>
+      <Header />
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/sign-in" element={<SignInPage />} />
         {/*Route à condtionner si on a bien un token (que l'utilisateur est loggé)*/}
         <Route path="/dashboard" element={<DashboardPage />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
-    <Footer />
   </StrictMode>,
 );

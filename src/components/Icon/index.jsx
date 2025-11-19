@@ -1,9 +1,12 @@
-function Icon({ iconType, strokeColor, title, subtitle }) {
+function Icon({ iconType, title, text }) {
   return (
     <>
-      <h1>{iconType}</h1>
-      <h2 style={{ color: strokeColor }}>{title}</h2>
-      <h3>{subtitle}</h3>
+        <h2 className="sr-only">Features</h2>
+        <div className="feature-item">
+          <img src={iconType} className="feature-icon" />
+          <h3 className="feature-item-title">{title}</h3>
+          <p>{text}</p>
+        </div>
     </>
   );
 }
