@@ -1,4 +1,4 @@
-import logoSrc from "../../assets/img/argentBankLogo.png";
+import logoSrc from "../../assets/img/argentBankLogo.webp";
 import { Link } from "react-router-dom";
 
 function Header() {

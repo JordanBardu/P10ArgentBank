@@ -1,9 +1,9 @@
 import MainBanner from "../../components/MainBanner/index.jsx";
 import Icon from "../../components/Icon/index.jsx";
-import imgSrc from "../../assets/img/bank-tree.jpeg";
-import iconChat from "../../assets/img/icon-chat.png";
-import iconMoney from "../../assets/img/icon-money.png";
-import iconSecurity from "../../assets/img/icon-security.png";
+import imgSrc from "../../assets/img/bank-tree.webp";
+import iconChat from "../../assets/img/icon-chat.webp";
+import iconMoney from "../../assets/img/icon-money.webp";
+import iconSecurity from "../../assets/img/icon-security.webp";
 
 function Homepage() {
   return (

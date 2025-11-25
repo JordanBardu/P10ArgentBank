@@ -9,7 +9,7 @@ import Footer from "./components/Footer/index.jsx";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import UserPage from "./pages/UserPage/index.jsx";
 
-const isLogged = false;
+const isLogged = true;
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

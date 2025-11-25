@@ -2,7 +2,7 @@ function MainBanner({ imgSrc }) {
   return (
     <>
       <div style={{ backgroundImage: `url(${imgSrc})` }} className="hero">
-        <section class="hero-content">
+        <section className="hero-content">
           <h2 className="sr-only">Promoted Content</h2>
           <p className="subtitle">No fees.</p>
           <p className="subtitle">No minimum deposit.</p>
