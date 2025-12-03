@@ -1,30 +1,23 @@
 import MainBanner from "../../components/MainBanner/index.jsx";
 import Icon from "../../components/Icon/index.jsx";
 import imgSrc from "../../assets/img/bank-tree.webp";
-import iconChat from "../../assets/img/icon-chat.webp";
-import iconMoney from "../../assets/img/icon-money.webp";
-import iconSecurity from "../../assets/img/icon-security.webp";
+import icons from "./icons-content.js";
 
 function Homepage() {
   return (
     <>
       <MainBanner imgSrc={imgSrc} />
       <section className="features">
-        <Icon
-          iconType={iconChat}
-          title="You are our #1 priority"
-          text="Need to talk to a representative? You can get in touch through our 24/7 chat or through a phone call in less than 5 minutes."
-        />
-        <Icon
-          iconType={iconMoney}
-          title="More savings means higher rates"
-          text="The more you save with us, the higher your interest rate will be!"
-        />
-        <Icon
-          iconType={iconSecurity}
-          title="Security you can trust"
-          text="We use top of the line encryption to make sure your data and money is always safe."
-        />
+        {icons.map((icon, index) => {
+          return (
+            <Icon
+              key={index}
+              iconType={icon.iconSrc}
+              title={icon.title}
+              text={icon.text}
+            />
+          );
+        })}
       </section>
     </>
   );
