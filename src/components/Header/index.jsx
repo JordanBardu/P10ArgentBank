@@ -11,6 +11,7 @@ function Header() {
 
   const handleLogout = () => {
     dispatch({ type: "LOGOUT" });
+    localStorage.removeItem("token");
     navigate("/");
   };
 
@@ -28,7 +29,7 @@ function Header() {
         <div>
           {isLoggedIn ? (
             <>
-              <Link to="/user" className="main-nav-item">
+              <Link to="/profile" className="main-nav-item">
                 <i className="fa fa-user-circle"></i>
                 {username}
               </Link>
@@ -43,7 +44,7 @@ function Header() {
               </Link>
             </>
           ) : (
-            <Link to="/sign-in" className="main-nav-item">
+            <Link to="/login" className="main-nav-item">
               <i className="fa fa-user-circle"></i>
               Sign In
             </Link>
